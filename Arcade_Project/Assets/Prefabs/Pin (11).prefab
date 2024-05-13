@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4165362443214114643}
   - component: {fileID: 1509889380303002335}
   m_Layer: 0
-  m_Name: Pin
+  m_Name: Pin (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637229227103061332}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.27783, y: 0, z: -0.22730005}
+  m_LocalPosition: {x: 1, y: 0, z: -0.474}
   m_LocalScale: {x: 0.061599527, y: 0.119923115, z: 0.071776256}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 8219851249434090918}
   - component: {fileID: 3617327318686761218}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Sensor
   m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -156,7 +156,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
