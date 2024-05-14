@@ -9,6 +9,6 @@ PhysicMaterial:
   m_Name: BasketBounce
   dynamicFriction: 0.63
   staticFriction: 0.85
-  bounciness: 0.78
+  bounciness: 0.5
   frictionCombine: 1
   bounceCombine: 3

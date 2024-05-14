@@ -17,7 +17,7 @@ public class KeepScore : MonoBehaviour
         scoreUI.text = Score.ToString();
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerExit(Collider other)
     {
         if(other.transform.tag=="Ball")
         {
