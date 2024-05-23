@@ -3283,9 +3283,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1928715113308148353}
     m_Modifications:
+    - target: {fileID: -6855062863988604957, guid: 6e612ad410a2d084688aad4a01b1f5c4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6e612ad410a2d084688aad4a01b1f5c4, type: 3}
       propertyPath: m_Name
       value: Basket Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6e612ad410a2d084688aad4a01b1f5c4, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6e612ad410a2d084688aad4a01b1f5c4, type: 3}
       propertyPath: m_IsActive

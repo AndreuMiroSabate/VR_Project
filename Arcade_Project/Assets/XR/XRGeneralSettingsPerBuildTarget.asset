@@ -16,6 +16,23 @@ MonoBehaviour:
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
   m_Loaders: []
+--- !u!114 &-7067763901723043855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4c3631f5e58749a59194e0cf6baf6d5, type: 3}
+  m_Name: Unknown Providers
+  m_EditorClassIdentifier: 
+  m_RequiresSettingsUpdate: 0
+  m_AutomaticLoading: 0
+  m_AutomaticRunning: 0
+  m_Loaders:
+  - {fileID: 11400000, guid: 7540587fedb305e41a846495da952b90, type: 2}
 --- !u!114 &-5795337068086425397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29,6 +46,20 @@ MonoBehaviour:
   m_Name: Standalone Settings
   m_EditorClassIdentifier: 
   m_LoaderManagerInstance: {fileID: 6663979355323248819}
+  m_InitManagerOnStart: 1
+--- !u!114 &-4848718182015563893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d236b7d11115f2143951f1e14045df39, type: 3}
+  m_Name: Unknown Settings
+  m_EditorClassIdentifier: 
+  m_LoaderManagerInstance: {fileID: -7067763901723043855}
   m_InitManagerOnStart: 1
 --- !u!114 &-3159586811678684024
 MonoBehaviour:
@@ -70,11 +101,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2dc886499c26824283350fa532d087d, type: 3}
   m_Name: XRGeneralSettingsPerBuildTarget
   m_EditorClassIdentifier: 
-  Keys: 010000000d00000007000000
+  Keys: 010000000d0000000700000000000000
   Values:
   - {fileID: -5795337068086425397}
   - {fileID: -2884784375365067419}
   - {fileID: -3159586811678684024}
+  - {fileID: -4848718182015563893}
 --- !u!114 &4811213636281487726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,4 +140,4 @@ MonoBehaviour:
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
   m_Loaders:
-  - {fileID: 11400000, guid: 1d6c4d4a88895264195494083401a5bb, type: 2}
+  - {fileID: 11400000, guid: 7540587fedb305e41a846495da952b90, type: 2}
