@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -6,8 +7,20 @@ namespace UnityEngine.XR.Content.Interaction
     /// <summary>
     /// An interactable lever that snaps into an on or off position by a direct interactor
     /// </summary>
+    /// 
     public class XRLever : XRBaseInteractable
     {
+
+        public GameObject Ball1;
+        public GameObject Ball2;
+        public GameObject Ball3;
+
+        private float BasketTime;
+        private int BasketTimeInt;
+        public TextMeshPro timeText;
+
+        private bool Playing;
+
         const float k_LeverDeadZone = 0.1f; // Prevents rapid switching between on and off states when right in the middle
 
         [SerializeField]
@@ -103,6 +116,7 @@ namespace UnityEngine.XR.Content.Interaction
             base.OnEnable();
             selectEntered.AddListener(StartGrab);
             selectExited.AddListener(EndGrab);
+            StartGame();
         }
 
         protected override void OnDisable()
@@ -223,6 +237,39 @@ namespace UnityEngine.XR.Content.Interaction
         void OnValidate()
         {
             SetHandleAngle(m_Value ? m_MaxAngle : m_MinAngle);
+        }
+
+        public void StartGame()
+        {
+            BasketTime = 90;
+            Ball1.SetActive(true);
+            Ball2.SetActive(true);
+            Ball3.SetActive(true);
+
+            Playing = true;
+        }
+
+        void Update()
+        {
+            if (Playing == true)
+            {
+                BasketTime -= Time.deltaTime;
+
+                if (BasketTime <= 0)
+                {
+                    BasketTime = 0;
+                    Playing = false;
+                }
+
+                BasketTimeInt = Mathf.FloorToInt(BasketTime);
+                timeText.text = BasketTimeInt.ToString();
+            }
+            if (Playing == false)
+            {
+                Ball1.SetActive(false);
+                Ball2.SetActive(false);
+                Ball3.SetActive(false);
+            }
         }
     }
 }

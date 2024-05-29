@@ -41,6 +41,12 @@ public class Play_Basket : MonoBehaviour
             }
             timeText.text = BasketTime.ToString();
         }
+        if(Playing == false)
+        {
+            Ball1.SetActive(false);
+            Ball2.SetActive(false);
+            Ball3.SetActive(false);
+        }
     }
 
     public void StartGame()
