@@ -15,9 +15,16 @@ namespace UnityEngine.XR.Content.Interaction
         public GameObject Ball2;
         public GameObject Ball3;
 
+        private Vector3 ball1InitialPosition;
+        private Vector3 ball2InitialPosition;
+        private Vector3 ball3InitialPosition;
+
+        public KeepScore keepScore;
+
         private float BasketTime;
         private int BasketTimeInt;
         public TextMeshPro timeText;
+        public TextMeshPro scoreText;
 
         private bool Playing;
 
@@ -108,7 +115,12 @@ namespace UnityEngine.XR.Content.Interaction
 
         void Start()
         {
+            Playing = false;
             SetValue(m_Value, true);
+
+            ball1InitialPosition = Ball1.transform.position;
+            ball2InitialPosition = Ball2.transform.position;
+            ball3InitialPosition = Ball3.transform.position;
         }
 
         protected override void OnEnable()
@@ -199,10 +211,12 @@ namespace UnityEngine.XR.Content.Interaction
             if (m_Value)
             {
                 m_OnLeverActivate.Invoke();
+                RestartTimer();
             }
             else
             {
                 m_OnLeverDeactivate.Invoke();
+                StartGame();
             }
 
             if (!isSelected && (m_LockToValue || forceRotation))
@@ -247,6 +261,22 @@ namespace UnityEngine.XR.Content.Interaction
             Ball3.SetActive(true);
 
             Playing = true;
+        }
+
+        void RestartTimer()
+        {
+            BasketTime = 90;
+            Playing = false;
+            timeText.text = "90";
+
+            if (keepScore != null)
+            {
+                keepScore.ResetScore();
+            }
+
+            Ball1.transform.position = ball1InitialPosition;
+            Ball2.transform.position = ball2InitialPosition;
+            Ball3.transform.position = ball3InitialPosition;
         }
 
         void Update()

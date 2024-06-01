@@ -23,4 +23,9 @@ public class KeepScore : MonoBehaviour
             Score += 1;
         }
     }
+
+    public void ResetScore()
+    {
+        Score = 0;
+    }
 }
