@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 1708095586619129162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.322215, y: 0.78339356, z: 2.1084821}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.4331, y: 1.4331, z: 1.4331}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5042691052065292817}
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 8706362238366843180}
   - {fileID: 5449184769770791463}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5642750542403724953
 GameObject:
@@ -573,7 +573,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -6961781202686817630, guid: 3794ff0a291b74b4bbc449d440e9f438, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -617,15 +617,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3794ff0a291b74b4bbc449d440e9f438, type: 2}
+  m_sharedMaterial: {fileID: -6961781202686817630, guid: 3794ff0a291b74b4bbc449d440e9f438, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190335
-  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
+    rgba: 4285067007
+  m_fontColor: {r: 1, g: 0.9333334, b: 0.40784317, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1132,7 +1132,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 27fc14f87704fb04f98d0955b0578eba, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2c5842b6aa2ca70468705c461ab3602c, type: 2}
+      objectReference: {fileID: 2100000, guid: ca0b064200a1ef244a7ca1fd64f8ab0a, type: 2}
     - target: {fileID: 919132149155446097, guid: 27fc14f87704fb04f98d0955b0578eba, type: 3}
       propertyPath: m_Name
       value: Aros Machine

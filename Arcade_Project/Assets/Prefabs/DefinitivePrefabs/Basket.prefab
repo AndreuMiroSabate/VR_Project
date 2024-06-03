@@ -475,7 +475,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2c5842b6aa2ca70468705c461ab3602c, type: 2}
+  - {fileID: 2100000, guid: 2acc63ebb026f524b85c27b3981c0401, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -556,7 +556,7 @@ Transform:
   - {fileID: 799904143204079843}
   - {fileID: 8298042256884051328}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &799904143204205155
 PrefabInstance:
@@ -596,7 +596,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6e612ad410a2d084688aad4a01b1f5c4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.223
+      value: 0.345
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6e612ad410a2d084688aad4a01b1f5c4, type: 3}
       propertyPath: m_LocalPosition.y
