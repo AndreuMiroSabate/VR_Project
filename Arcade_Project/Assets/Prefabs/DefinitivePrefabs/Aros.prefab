@@ -207,8 +207,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5642750542403724953}
   m_LocalRotation: {x: -0, y: -0.70126134, z: -0, w: 0.71290433}
-  m_LocalPosition: {x: -4.0198, y: 0.54199296, z: 1.3614}
-  m_LocalScale: {x: 0.12658006, y: 0.033814598, z: 0.12658006}
+  m_LocalPosition: {x: -4.0198, y: 0.55496, z: 1.3614}
+  m_LocalScale: {x: 0.12658006, y: 0.02084467, z: 0.12658006}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3340278006652331308}
@@ -605,6 +605,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreUI: {fileID: 5258212573005852888}
+  pointSound: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!1 &7135087476458840820
 GameObject:
   m_ObjectHideFlags: 0
