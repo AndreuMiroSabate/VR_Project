@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using Unity.VisualScripting;
 
 public class KeepScore : MonoBehaviour
 {
     // Start is called before the first frame update
     private int Score;
     public TextMeshPro scoreUI;
+    public AudioClip pointSound;  // Variable para el sonido
+    private AudioSource audioSource;  // Variable para el AudioSource
 
-    public AudioClip point;
-
-    AudioSource audioSource = GetComponent<AudioSource>();
+    // Start is called before the first frame update
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();  // Obtén el componente AudioSource
+    }
 
     // Update is called once per frame
     void Update()
@@ -22,11 +25,18 @@ public class KeepScore : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if(other.transform.tag=="Ball")
+        if (other.transform.tag == "Ball")
         {
             Score += 1;
-            audioSource.PlayOneShot(point);
+            PlayPointSound();  // Reproduce el sonido después de sumar un punto
+        }
+    }
 
+    void PlayPointSound()
+    {
+        if (pointSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(pointSound);
         }
     }
 
