@@ -702,7 +702,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1.4713769
-  MaxDistance: 2.183803
+  MaxDistance: 2.3
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -816,7 +816,7 @@ Transform:
   - {fileID: 3100443063833845232}
   - {fileID: 1496330136843631002}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &799904143204205155
 PrefabInstance:
@@ -1720,6 +1720,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 836482696175861258}
     m_Modifications:
+    - target: {fileID: 929602580012127753, guid: 6170de8d020e7df4a94d336cfd6e65ba, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7586faa120ae5344cad54f11e0e64e15, type: 2}
     - target: {fileID: 5202211970501327854, guid: 6170de8d020e7df4a94d336cfd6e65ba, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1828,6 +1832,14 @@ PrefabInstance:
       propertyPath: m_OnLeverActivate.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6046477443361272520, guid: 6170de8d020e7df4a94d336cfd6e65ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7586faa120ae5344cad54f11e0e64e15, type: 2}
+    - target: {fileID: 6046477443361272520, guid: 6170de8d020e7df4a94d336cfd6e65ba, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7586faa120ae5344cad54f11e0e64e15, type: 2}
     - target: {fileID: 7459442142708147920, guid: 6170de8d020e7df4a94d336cfd6e65ba, type: 3}
       propertyPath: m_Name
       value: Lever (1)

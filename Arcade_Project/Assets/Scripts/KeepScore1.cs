@@ -22,6 +22,7 @@ public class KeepScore1 : MonoBehaviour
         if (other.transform.tag=="Ball")
         {
             Score += 1;
+            other.gameObject.SetActive(false);
         }
     }
 
