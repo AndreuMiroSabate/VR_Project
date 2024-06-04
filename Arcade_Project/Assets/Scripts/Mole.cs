@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class Mole : MonoBehaviour
 {
@@ -16,20 +15,11 @@ public class Mole : MonoBehaviour
 
     public float hideMoleTimer = 1.5f;
 
-    public TextMeshPro ScoreText;
-    private int score = 0;
-
     void Awake()
     {
         HideMole();
 
         transform.localPosition = myNewXYZPosition;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame
@@ -42,8 +32,6 @@ public class Mole : MonoBehaviour
         {
             HideMole();
         }
-
-        ScoreText.text = score.ToString();
     }
 
     public void HideMole()
@@ -59,24 +47,12 @@ public class Mole : MonoBehaviour
         hideMoleTimer = 1.5f;
     }
 
-
-    //private void OnTriggerExit(Collider other)
-    //{
-    //    if (other.transform.tag == "Mazo")
-    //    {
-    //        score += 1;
-    //        HideMole();
-    //    }
-    //}
-
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerExit(Collider other)
     {
         if (other.transform.tag == "Mazo")
         {
-            score += 1;
             HideMole();
         }
     }
-
 
 }

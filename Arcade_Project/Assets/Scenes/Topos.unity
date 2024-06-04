@@ -427,6 +427,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Topos Machine Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5226076960856241745, guid: a3352c577ce1fc744931d120ea540a36, type: 3}
+      propertyPath: m_margin.x
+      value: 2.9809794
+      objectReference: {fileID: 0}
     - target: {fileID: 6074590012423453124, guid: a3352c577ce1fc744931d120ea540a36, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -470,6 +474,14 @@ PrefabInstance:
     - target: {fileID: 6074590012423453124, guid: a3352c577ce1fc744931d120ea540a36, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388113272237950454, guid: a3352c577ce1fc744931d120ea540a36, type: 3}
+      propertyPath: m_text
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388113272237950454, guid: a3352c577ce1fc744931d120ea540a36, type: 3}
+      propertyPath: m_margin.x
+      value: -1.2126331
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

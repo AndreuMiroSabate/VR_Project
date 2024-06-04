@@ -21,8 +21,8 @@ public class Play_Mole : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameTimer -= Time.deltaTime;
-        timerText.text = Mathf.FloorToInt(gameTimer).ToString();
+        //gameTimer -= Time.deltaTime;
+        //timerText.text = Mathf.FloorToInt(gameTimer).ToString();
 
         showMoleTimer -= Time.deltaTime;
         if(showMoleTimer < 0f)
