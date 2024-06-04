@@ -413,6 +413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreUI: {fileID: 726829816266471094}
+  pointSound: {fileID: 8300000, guid: 28fc7fac46027484399a99b72332950f, type: 3}
 --- !u!1 &2727293303620813498
 GameObject:
   m_ObjectHideFlags: 0
