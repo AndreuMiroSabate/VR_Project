@@ -9,7 +9,7 @@ public class KeepScore : MonoBehaviour
     private int Score;
     public TextMeshPro scoreUI;
     public AudioClip pointSound;  // Variable para el sonido
-    private AudioSource audioSource;  // Variable para el AudioSource
+    public AudioSource audioSource;  // Variable para el AudioSource
 
     // Start is called before the first frame update
     void Start()
