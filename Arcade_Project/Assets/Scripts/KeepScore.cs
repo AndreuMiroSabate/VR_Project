@@ -10,6 +10,10 @@ public class KeepScore : MonoBehaviour
     private int Score;
     public TextMeshPro scoreUI;
 
+    public AudioClip point;
+
+    AudioSource audioSource = GetComponent<AudioSource>();
+
     // Update is called once per frame
     void Update()
     {
@@ -21,6 +25,8 @@ public class KeepScore : MonoBehaviour
         if(other.transform.tag=="Ball")
         {
             Score += 1;
+            audioSource.PlayOneShot(point);
+
         }
     }
 
